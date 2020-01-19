@@ -16,8 +16,7 @@ public class foulFilter extends ListenerAdapter {
                 if(message[i].equalsIgnoreCase(BannedWords[l]))
                 {
                     event.getMessage().delete().queue();
-                    event.getChannel().sendMessage("Yo no fucking cussing in my server " + event.getAuthor().getName()).queue();
-
+                    event.getChannel().sendMessage("No cussing allowed on this server" + event.getAuthor().getName()).queue();
                 }
 
             }

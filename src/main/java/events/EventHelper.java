@@ -27,7 +27,6 @@ public class EventHelper  extends ListenerAdapter {
                     "help\n");
             helper.addField("Creator","Nathan Lieu The Second Hokage Of The Leaf Village",false);
             helper.setColor(0xC64134);
-            event.getChannel().sendTyping().queue();
             user.getUser().openPrivateChannel().complete().sendMessage(helper.build()).queue();
 
 
